@@ -1,0 +1,164 @@
+.header {
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage-header {
+  background-image: url(images/pic_1.jpg);
+}
+
+.pricing-header {
+  background-image: url(images/pic_2.jpg);
+}
+
+.courses-header {
+  background-image: url(images/pic_3.jpg);
+  min-height: 600px;
+}
+
+.header-button,
+#quotes,
+#search {
+  background-color: #c271ff;
+}
+
+.profile-img {
+  width: 180px;
+  max-height: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 125px;
+}
+
+.small-profile-img {
+  width: 60px;
+  min-height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 125px;
+}
+
+.purp {
+  color: #c271ff;
+}
+
+.stars {
+  width: 15px;
+}
+
+.play-button {
+  position: relative;
+  top: -75px;
+  border-radius: 125px;
+}
+
+.play-button img {
+  width: 50px;
+}
+
+.social-item {
+  list-style: none;
+}
+
+.social-link > svg {
+  fill: white;
+}
+
+.header-row {
+  border-bottom: 1px solid gray;
+}
+
+.header i {
+  color: rgb(127, 190, 31);
+}
+
+.form-control {
+  background-color: rgb(226, 179, 235);
+  color: white;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #c271ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.333%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.333%);
+  }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header-profiles {
+    margin-top: 50px;
+  }
+
+  .profile-card {
+    margin: 15px;
+  }
+
+  #footer ul {
+    display: none !important;
+  }
+
+  .profile-caption {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    min-height: 700px;
+    background-position: 50% 50%;
+  }
+
+  .header-profiles {
+    margin-top: 50px;
+  }
+
+  .profile-card {
+    margin: 15px;
+  }
+}
